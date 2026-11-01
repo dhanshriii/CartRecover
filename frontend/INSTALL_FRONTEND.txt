@@ -1,0 +1,29 @@
+CARTRECOVER FRONTEND SETUP
+
+IMPORTANT: Extract the contents of this ZIP INTO your existing frontend folder:
+D:\YottaFlex\CartRecover\frontend
+
+The ZIP contains vite.config.js and src/. It should merge with the Vite project created by create-vite. Do NOT extract into the CartRecover root.
+
+1. Start FastAPI in a separate terminal:
+   cd D:\YottaFlex\CartRecover\backend
+   ..\.venv\Scripts\activate
+   uvicorn app.main:app --reload
+
+2. In another terminal:
+   cd D:\YottaFlex\CartRecover\frontend
+   npm install
+   npm run dev
+
+3. Open the Vite URL, normally http://localhost:5173.
+
+Vite proxies /api and /health to http://127.0.0.1:8000.
+If FastAPI runs on another port, update frontend/vite.config.js.
+
+Live endpoints:
+GET  /api/analytics/overview
+POST /api/recovery/evaluate
+POST /api/campaigns/schedule
+POST /api/attribution
+
+The dashboard displays actual API responses. Attributed revenue is not described as total or incremental revenue.
