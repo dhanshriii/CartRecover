@@ -1,0 +1,5 @@
+issue_id,issue_type,entity_type,entity_id,expected_detection
+ISS-0001,MESSAGE_AFTER_OPT_OUT,SEND_ATTEMPT,SEND-2026-009983,SENT without active consent at attempted_at
+ISS-0002,ABANDONED_AFTER_PURCHASE,CART,CART-2026-000001,Cart status conflicts with completed order
+ISS-0003,STALE_CART_TOTAL,CART,CART-2026-000004,Stored cart total differs from sum of cart lines after quantity update
+ISS-0004,DOUBLE_ATTRIBUTION,ORDER,ORD-2026-002662,More than one primary attribution for an order

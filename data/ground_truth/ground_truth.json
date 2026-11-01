@@ -1,0 +1,30 @@
+[
+  {
+    "issue_id": "ISS-0001",
+    "issue_type": "MESSAGE_AFTER_OPT_OUT",
+    "entity_type": "SEND_ATTEMPT",
+    "entity_id": "SEND-2026-009983",
+    "expected_detection": "SENT without active consent at attempted_at"
+  },
+  {
+    "issue_id": "ISS-0002",
+    "issue_type": "ABANDONED_AFTER_PURCHASE",
+    "entity_type": "CART",
+    "entity_id": "CART-2026-000001",
+    "expected_detection": "Cart status conflicts with completed order"
+  },
+  {
+    "issue_id": "ISS-0003",
+    "issue_type": "STALE_CART_TOTAL",
+    "entity_type": "CART",
+    "entity_id": "CART-2026-000004",
+    "expected_detection": "Stored cart total differs from sum of cart lines after quantity update"
+  },
+  {
+    "issue_id": "ISS-0004",
+    "issue_type": "DOUBLE_ATTRIBUTION",
+    "entity_type": "ORDER",
+    "entity_id": "ORD-2026-002662",
+    "expected_detection": "More than one primary attribution for an order"
+  }
+]

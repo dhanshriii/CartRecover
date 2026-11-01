@@ -1,0 +1,26 @@
+
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated database
+data/cartrecover.db
+
+# Duplicate / legacy generated dataset
+data/generated/
+
+# JSON exports duplicate the canonical CSV exports
+data/exports/*.json
+
+# Local Python and test artifacts

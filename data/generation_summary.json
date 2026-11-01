@@ -1,0 +1,34 @@
+{
+  "seed": 20261022,
+  "scale": 1.0,
+  "reference_time": "2026-10-30 12:00:00",
+  "history_days": 90,
+  "abandonment_threshold_minutes": 180,
+  "attribution_window_days": 7,
+  "currency": "INR",
+  "money_storage": "integer paise; legacy column names use _cents",
+  "counts": {
+    "customers": 30000,
+    "consents": 71834,
+    "sessions": 50000,
+    "carts": 50000,
+    "cart_lines": 90193,
+    "campaigns": 5,
+    "message_templates": 10000,
+    "send_attempts": 10002,
+    "orders": 2662,
+    "attributions": 46,
+    "cart_events": 88027,
+    "message_events": 2806
+  },
+  "carts_reaching_abandonment": 20000,
+  "currently_abandoned_carts": 19456,
+  "frequency_cap_suppressions": 7923,
+  "multi_device_customers": 12573,
+  "ground_truth_issue_count": 4,
+  "notes": [
+    "Baseline outcomes are generated before anomaly injection.",
+    "Cart status is derived from event time and order state.",
+    "Attribution uses last-click within a 7-day window."
+  ]
+}
